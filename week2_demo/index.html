@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Logan Stoddard" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN-DOC STYLING-->
+    <style>
+        /*in here we write in CSS*/
+
+        /*SELECTING in CSS & Javascript; select specific element(s) on a page
+        
+            *by ELEMENT/TAG type        ex: body, div, p
+            *by ID attribute            ex: #wrapper, #nav, #folder, #title
+            *by CLASS attribute         ex: coming in week 3 :]
+        
+        
+        */
+
+        div { /* applies to ALL divs on the page*/
+        
+            border:1px solid black;
+            padding:10px; /*adds 10px of space to all 4 sides of the element, between its
+            content and its border*/
+            margin:5px;/*adds 5px of space to all 4 sides between other elements*/
+            
+        }
+
+
+
+        #nav {/* # specifies ID name, only applies to single element with that ID*/
+        
+            background-color: rgb(200, 200, 200);
+        
+        }
+
+    </style>
+</head>
+<body style="background-color: grey">
+    <div id="wrapper"><!--"wraps around" all content on page-->
+
+        <h1>Logan Stoddard</h1>
+
+        <!--NAV SECTION-->
+        <div id="nav">
+            <!--ID Names can only be used 1px per page-->
+
+            <!--linking to OUTSIDE pages [not part of your website] you need FULL PATH-->
+            <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+            <!--href holds the URL of web page you are linking to-->
+            <!--targets="_blank" opens in link new tab in browser-->
+
+            <!--IN PAGE JUMP LINKs: linking to sections within the actual page itself-->
+            <a herf="#bio">BIO</a>
+            <a herf="#school">SCHOOLING</a>
+            <a herf="#hobbies">HOBBIES</a>
+            <a herf="#footer">FOOTER</a>
+
+        </div><!--/#nav-->
+
+        <!--BIO SECTION-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if hes afraid? That is the <i>only time</i> a man can be brave.
+                A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. 
+                You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. 
+                It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. 
+                It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--IMAGE TAG-->
+            <!--remote image link example-->
+            <img src="https://ae01.alicdn.com/kf/HTB1ZeMHX5zxK1Rjy1zkq6yHrVXa9/
+            2018-New-NK-Headless-guitar-Fanned-Fret-guitars-Model-Wood-Clear-Color-
+            Flame-maple-Neck-Guitar.jpg" alt="A guitar outside" style="width:500px">
+
+            <!--RELATIVE img link example-->
+            <!--relative means: resource (file) exists 
+            WITHIN the ROOT FOLDER-->
+            <img src="images/stormsEnd.jpg"
+            alt="Storms end from westeros" style="width:500px">
+        </div><!--/#bio-->
+
+        <!--SCHOOLING SECTION-->
+        <div id="school">
+
+            <h2>Schooling</h2>
+
+            <o1>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+                <li>School 4</li>
+            </o1>
+
+            <img src="images/meca.jpg" alt=""
+            style="width:500px">
+
+        </div><!--/#school-->
+
+        <!--HOBBIES SECTION-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <u1>
+                <li>Hobbie 1</li>
+                <li>Hobbie 2</li>
+                <li>Hobbie 3</li>
+                <li>Hobbie 4</li>
+            </u1>
+
+        </div><!--/#hobbies-->
+
+        <!--FOOTER SECTION-->
+        <div id="footer">
+
+            <a href="#wrapper">Back To Top of Page</a>
+            <p>&copy; 2023 | L Stoddard | SE111.02 [202320]</p>
+
+            <!--VALIDATION IMAGE SCREENSHOT BELOW-->
+            <img src="" alt="validation screenshot">
+
+        </div><!--/#footer-->
+    </div><!--/ end of main div-->
+
+</body>
+</html>
