@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="L Stoddard">
+        <meta name="description" content="W2 Lab">
+        <title>W2 | SE111Lab2</title>
+        <!--IN-DOC STYLING-->
+        <style>
+            /*in here we write in CSS*/
+
+            /*SELECTING in CSS & Javascript; select specific element(s) on a page
+            
+                *by ELEMENT/TAG type        ex: body, div, p
+                *by ID attribute            ex: #wrapper, #nav, #folder, #title
+                *by CLASS attribute         ex: coming in week 3 :]
+            
+            
+            */
+
+            div { /* applies to ALL divs on the page*/
+            
+                border:1px solid black;
+                padding:10px; /*adds 10px of space to all 4 sides of the element, between its
+                content and its border*/
+                margin:5px;/*adds 5px of space to all 4 sides between other elements*/
+                
+            }
+
+
+
+            #nav {/* # specifies ID name, only applies to single element with that ID*/
+            
+                background-color: rgb(200, 200, 200);
+            
+            }
+
+        </style>
+    </head>
+    <body style="background-color: grey">
+        <header id="header">
+       <hr>
+       <nav>
+           <!--link to the index and characters pages-->
+           <!--In addition, use a fragment to link to the footer of the Character's page-->
+           
+       </nav>
+       <hr>
+        <div id="wrapper"><!--"wraps around" all content on page-->
+
+            <h1>Logan Stoddard</h1>
+
+            <!--NAV SECTION-->
+            <div id="nav">
+                <!--ID Names can only be used 1px per page-->
+                <!--targets="_blank" opens in link new tab in browser-->
+
+                <!--IN PAGE JUMP LINKs: linking to sections within the actual page itself-->
+                <a href="https://www.neit.edu/" target="_blank">Visit NEIT</a> | <a href="#bio">BIO</a> | <a href="#school">SCHOOL</a> |<a href="#hobbies">HOBBIES</a> | <a href="#bottom">Bottom Of Page</a>
+
+            </div><!--/#nav-->
+
+            <!--BIO SECTION-->
+            <div id="bio">
+
+                <h2>About Me</h2>
+                <img src="images/gibson-firebird-v-vburst-2006-cons-full-front.jpg" alt="A Guitar">
+                <p>This is a <b><u>bio</u></b> about myself I don't really know what to write about so... Im just gonna keep on typing, my favorite color
+                    is orange but I also really like purple. Some hobbies I do are ATV's my dad and I go out to places and do expert level trails.
+                    I find it pretty fun and enjoy doing it, another thing about myself is I play <b>guitar</b>> ive been play for a little over six years.
+                    Im quite fond of music and I enjoy anything music related for example I colect <b>records</b>. Im starting to run out of things to say so
+                    I guess I will end my Bio here thanks for reading. :)
+
+                <!--IMAGE TAG-->
+                <!--remote image link example-->
+                <!--<img src="" alt="A guitar outside" style="width:500px">-->
+
+                <!--RELATIVE img link example-->
+                <!--relative means: resource (file) exists 
+                WITHIN the ROOT FOLDER-->
+                
+            </div><!--/#bio-->
+
+            <!--SCHOOLING SECTION-->
+            <div id="school">
+
+                <h2>Schooling</h2>
+                <img src="images/layard-high-logo.jpg" alt="LHS Logo">
+
+                <o1>
+
+                    <li>Ledyard High School</li>
+                    <li>NEIT</li>
+                    <li>URI</li>
+                    <li>LCS</li>
+                </o1>
+
+            </div><!--/#school-->
+
+            <!--HOBBIES SECTION-->
+            <div id="hobbies">
+
+                <h2>Hobbies</h2>
+                <img src="images/6000000001.jpg" alt="An ATV" style="width:500px">
+                <u1>
+                    <li>ATV's</li>
+                    <li>Guitar</li>
+                    <li>Records</li>
+                    <li>Fishing</li>
+                </u1>
+
+            </div><!--/#hobbies-->
+
+            <!--FOOTER SECTION-->
+            <div id="bottom">
+
+                <a href="#wrapper">Back To Top of Page</a>
+                <p>&copy; 2023 | L Stoddard | SE111.02 [202320]</p>
+
+                <!--VALIDATION IMAGE SCREENSHOT BELOW-->
+                <img src="" alt="validation screenshot">
+
+            </div><!--/#footer-->
+        </div><!--/ end of main div-->
+
+    </body>
+    </html>
