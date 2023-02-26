@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Logan Stoddard">
+    <meta name="description" content="W6 Assignment | Intro to JS">
+
+    <title>W6 | Intro to JS</title>
+</head>
+<body>
+    <!--we should have some type of HTML in the file to start-->
+    <h1>W6 Assignment | Intro to JavaScript</h1>
+
+    <!--script tags usually go after all of the intented HTML (body of bottom)-->
+    <!--IN DOCUMENT: means the code lives directly in the file, within appropriate tages
+    <script> for JS or <style> for CSS-->
+
+        <script>
+
+            var rate = Number(prompt(`Enter your Rate: `))
+            var hours = Number(prompt(`Enter your hours worked: `))
+            var tax = Number(prompt(`Enter your tax rate: `))
+
+            var gross = (rate * hours) * 2
+            var taxamnt = gross * tax
+            var net = gross - taxamnt
+            console.log(gross)
+            console.log(taxamnt)
+            console.log(net)
+
+            alert(`Gross Pay: ${gross}\n Uncle Sams Share: ${taxamnt}\n Net Pay: ${net}`)
+
+            
+        </script>
+            
+</body>
+</html>
